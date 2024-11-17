@@ -1,4 +1,4 @@
-# Ejercicio resuelto No 5 del libro de Lógica de Programación de Efrain Oviendo
+# Ejercicio resuelto No 5 del libro de Lógica de Programación de Efrain Oviedo
 
 class SumaInstrucciones:
     """

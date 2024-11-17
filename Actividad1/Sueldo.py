@@ -1,4 +1,4 @@
-# Ejercicio propuesto No 12 del libro de Lógica de Programación de Efrain Oviendo
+# Ejercicio propuesto No 12 del libro de Lógica de Programación de Efrain Oviedo
 
 class Sueldo:
     """

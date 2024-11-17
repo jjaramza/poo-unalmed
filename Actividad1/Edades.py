@@ -1,4 +1,4 @@
-# Ejercicio resuelto No 4 del libro de Lógica de Programación de Efrain Oviendo
+# Ejercicio resuelto No 4 del libro de Lógica de Programación de Efrain Oviedo
 
 class Edades:
     """
@@ -7,22 +7,28 @@ class Edades:
     """
     def __init__(self, edad_juan: int):
         """
-        Constructor para inicializar las edades basadas en la edad de Juan.
+        Inicializar la edad de Juan.
         """
-        self.edad_juan: int = edad_juan
-        self.edad_alberto: int = (2 * edad_juan) // 3
-        self.edad_ana: int = (4 * edad_juan) // 3
-        self.edad_mama: int = self.edad_juan + self.edad_alberto + self.edad_ana
+        self.edad_juan = edad_juan
+        
+    def calcular_edades(self, edad_juan: int) -> list:
+        """
+        Calcular las edades de Alberto, Ana y Mama con base en la edad de Juan.
+        """
+        edad_alberto = (2 * edad_juan) // 3
+        edad_ana = (4 * edad_juan) // 3
+        edad_mama = edad_juan + edad_alberto + edad_ana
+        return [edad_alberto, edad_ana, edad_juan, edad_mama]
         
     def mostrar_edades(self):
         """
-        Método para imprimir las edades.
+        Muestra las edades de Alberto, Ana, Juan y Mamá con un formato espefíco.
         """
-        print("Las edades son:")
-        print(f"Alberto = {self.edad_alberto}")
-        print(f"Ana = {self.edad_ana}")
-        print(f"Juan = {self.edad_juan}")
-        print(f"Mamá = {self.edad_mama}")
+        edades = self.calcular_edades(self.edad_juan)
+        
+        print("\nLas edades son:")
+        for idx, nombre in enumerate(["Alberto", "Ana", "Juan", "Mamá"]):
+            print(f"{nombre}: {edades[idx]}")
     
 
 if __name__ == "__main__":
