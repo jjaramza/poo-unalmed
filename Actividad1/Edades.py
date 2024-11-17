@@ -22,7 +22,7 @@ class Edades:
         
     def mostrar_edades(self):
         """
-        Muestra las edades de Alberto, Ana, Juan y Mamá con un formato espefíco.
+        Muestra las edades de Alberto, Ana, Juan y Mamá con un formato específico.
         """
         edades = self.calcular_edades(self.edad_juan)
         

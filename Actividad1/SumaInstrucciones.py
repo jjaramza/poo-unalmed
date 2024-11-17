@@ -14,18 +14,12 @@ class SumaInstrucciones:
         
     def realizar_calculos(self):
         """
-        Método para realizar los cáculos
+        Método para realizar los cálculos
         """
         self.SUMA += self.X
         self.X += self.Y ** 2
         self.SUMA += self.X / self.Y
-    
-    def mostrar_mensaje(self):
-        """
-        Método para mostrar el resultado de la suma
-        """
-        self.realizar_calculos() # Se llama al método para que realice los cáculos
-        return f"El valor de la suma es: {self.SUMA}"
+        return self.SUMA
 
 
 if __name__ == "__main__":
@@ -33,4 +27,4 @@ if __name__ == "__main__":
     sumar_ins = SumaInstrucciones()
     
     # Mostrar resultado
-    print(sumar_ins.mostrar_mensaje())
+    print(f"El valor de la suma es: {sumar_ins.realizar_calculos()}")

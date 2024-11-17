@@ -7,18 +7,13 @@ class Sueldo:
     """
     VALOR_HORA = 5000  # Constante de clase: valor por hora
     RETE_FUENTE = 0.125  # Constante de clase: porcentaje de retención
-    
-    def __init__(self, horas_laboradas: float):
-        """
-        Constructor para inicilizar las horas laboradas.
-        """
-        self.horas_laboradas = horas_laboradas
+    HORAS_SEMANA = 48  # Constante de clase: horas laboradas por semana
         
     def calcular_salario_bruto(self) -> float:
         """
-        Calcula el salario bruto basado en las horas trabajadas.
+        Calcula el salario bruto mensual basado en las horas trabajadas.
         """
-        return Sueldo.VALOR_HORA * self.horas_laboradas
+        return 4 * Sueldo.HORAS_SEMANA * Sueldo.VALOR_HORA
         
     def calcular_rete_fuente(self, salario_bruto: float) -> float:
         """
@@ -46,6 +41,5 @@ class Sueldo:
 
 
 if __name__ == "__main__":
-    horas = float(input("Ingrese las horas laboradas: "))
-    trabajador = Sueldo(horas)
-    trabajador.mostrar_info_salario()
+    empleado = Sueldo()
+    empleado.mostrar_info_salario()
