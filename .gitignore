@@ -1,0 +1,11 @@
+# Ignorar carpetas generadas automáticamente por Python
+**/__pycache__/
+*.pyc
+
+# Ignorar entornos virtuales
+venv/
+.env/
+
+# Archivos de configuración específicos del IDE
+.vscode/
+.idea/
