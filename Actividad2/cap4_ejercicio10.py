@@ -1,16 +1,12 @@
 # Ejercicio resuelto No 10 del Capítulo 4. Libro de Lógica de Programación de Efrain Oviedo.
 
 class Liquidacion:
-    """
-    Liquidación del pago de matrícula de un estudiante con base en
-    su patrimonio y estrato.
-    """
+    
     def __init__(self,
                  numero_inscripcion: str,
                  nombre_estudiante: str,
                  patrimonio: float,
                  estrato_social: int) -> None:
-        """Inicializa el patrimonio y el estrato social del estudiante."""
         self.numero_inscripcion = numero_inscripcion
         self.nombre_estudiante = nombre_estudiante
         self.patrimonio = patrimonio

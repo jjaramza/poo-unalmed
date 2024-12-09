@@ -1,16 +1,11 @@
 # Ejercicio propuesto No 18 del Capítulo 3. Libro de Lógica de Programación de Efrain Oviedo.
 
 class Empleado:
-    """
-    Clase que calcula el salario bruto y salario neto de un empleado.
-    """
+    
     VALOR_HORA = 10000 # Constante de clase: valor hora trabajada.
     RETE_FUENTE = 10 # Constante de clase: porcentaje de retención en la fuente.
     
     def __init__ (self, codigo_empleado: str, nombre_empleado: str, horas_trabajadas_mes: float) -> None:
-        """
-        Inicializa un empleado con su código, nombre y horas trabajadas al mes.
-        """
         self.codigo_empleado = codigo_empleado
         self.nombre_empleado = nombre_empleado
         self.horas_trabajadas_mes = horas_trabajadas_mes

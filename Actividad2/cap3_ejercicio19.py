@@ -3,14 +3,10 @@
 from math import sqrt, pow
 
 class Equilatero:
-    """
-    Permite obtener el perímetro, la altura y el área de un triángulo equilátero,
-    a partir del valor de un lado.
-    """
+    
     RAIZ_DE_TRES = sqrt(3) # Constante de clase: cálculo de la raíz cuadrada de 3.
     
     def __init__(self, lado: float) -> None:
-        """Inicializa el objeto Equilatero con su lado."""
         self.lado = lado
         
     def perimetro_triangulo(self) -> float:

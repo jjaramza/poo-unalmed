@@ -1,13 +1,8 @@
 # Ejercicio resuelto No 7 del Capítulo 4. Libro de Lógica de Programación de Efrain Oviedo.
 
 class ComparacionNumero:
-    """
-    Dados dos valores numéricos A y B, se determinará
-    si A es mayor, menor o igual a B.
-    """
     
     def __init__(self, valor_a: int, valor_b: int) -> None:
-        """Inicializar con los valores numéricos a y b"""
         self.valor_a = valor_a
         self.valor_b = valor_b
         

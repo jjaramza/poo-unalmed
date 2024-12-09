@@ -3,13 +3,8 @@
 from math import sqrt
 
 class Triangulo:
-    """
-    Permite obtener el perímetro, el semiperímetro y el área de un triángulo
-    a partir de sus tres lados.
-    """
     
     def __init__(self, lado_a: float, lado_b: float, lado_c: float) -> None:
-        """Inicializa el objeto Triangulo con los lados a, b y c."""
         self.lado_a = lado_a
         self.lado_b = lado_b
         self.lado_c = lado_c
